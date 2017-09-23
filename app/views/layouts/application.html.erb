@@ -9,6 +9,13 @@
   </head>
 
   <body>
+    <%= render "partials/nav" %>
+    <div class="notice">
+      <%= flash[:notice] %>
+    </div>
+    <div class="error">
+      <%= flash[:error] %>
+    </div>
     <%= yield %>
   </body>
 </html>
