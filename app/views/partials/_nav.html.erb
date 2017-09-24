@@ -1,5 +1,10 @@
 <% if current_user %>
-  <%= button_to 'logout', session_path, method: :delete %>
+<ul>
+  <li><%= button_to 'Logout', session_path, method: :delete %></li>
+  <li><%= link_to "Profile", user_path(:id) %></li>
+  <li><%= link_to "Aquarium", users_path %></li>
+  <li><%= link_to "Items", items_path %></li>
+</ul>
 <% else %>
   <%= link_to 'log in', new_session_path %>
 <% end %>
