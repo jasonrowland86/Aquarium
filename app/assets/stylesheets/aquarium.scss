@@ -1,5 +1,5 @@
 .item.active.fish-a {
-	background: url(/assets/fish-e.png);
+	background: url(http://s3.amazonaws.com/aquarium-app/fish-e.png);
 	height: 80px;
 	width: 120px;
 	position: absolute;
@@ -12,7 +12,7 @@
 }
 
 .item.active.fish-b {
-	background: url(/assets/fish-b.png);
+	background: url(http://s3.amazonaws.com/aquarium-app/fish-b.png);
 	position: absolute;
 	height: 85px;
 	width: 120px;
@@ -25,7 +25,7 @@
 }
 
 .item.active.fish-c {
-	background: url(/assets/fish-c.png);
+	background: url(http://s3.amazonaws.com/aquarium-app/fish-c.png);
 	position: absolute;
 	height: 150px;
 	width: 150px;
