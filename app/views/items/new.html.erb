@@ -2,6 +2,6 @@
 
 <%= form_for @item do |f| %>
   <%= f.text_field :name %>
-  <%= f.text_field :kind %>
+  <%= f.select :kind, options_for_select(@kinds), include_blank: true %>
   <%= f.submit 'Add' %>
 <% end %>

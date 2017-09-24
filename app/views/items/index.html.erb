@@ -1,9 +1,11 @@
 <h2>Your Items</h2>
-
+<h4>You hve <%= current_user.items.count %> items in your aquarium</h4>
 <% @items.each do |item| %>
   <div class="item">
     <%= link_to item.name, item_path(item) %>
   </div>
 <% end %>
-
+<br>
 <%= link_to 'Add New Item', new_item_path %>
+<br>
+<%= link_to 'View Your Aquarium', users_path %>
