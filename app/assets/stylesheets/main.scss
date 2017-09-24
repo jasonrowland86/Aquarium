@@ -1,0 +1,41 @@
+html, body {
+
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.link {
+
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #D8F9C0;
+  height: 75px;
+}
+
+nav ul {
+  display: flex;
+}
+nav li {
+  list-style: none;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.main {
+  flex: 1;
+  background-color: #27FCEE;
+
+}
+
+footer {
+  height: 50px;
+  background-color: #D8F9C0;
+}
