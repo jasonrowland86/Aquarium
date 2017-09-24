@@ -11,6 +11,7 @@ class ItemsController < ApplicationController
 
   def new
     @item = Item.new
+    @kinds = ['fish-a', 'fish-b', 'fish-c']
   end
 
   def create
