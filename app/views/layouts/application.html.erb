@@ -6,16 +6,15 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
-    <%= render "partials/nav" %>
-    <div class="notice">
-      <%= flash[:notice] %>
+    <div class="main">
+      <nav><%= render "partials/nav" %></nav>
+      <%= render "partials/flashMessages" %>
+      <%= yield %>
     </div>
-    <div class="error">
-      <%= flash[:error] %>
-    </div>
-    <%= yield %>
+    <%= render "partials/footer" %>
   </body>
 </html>
