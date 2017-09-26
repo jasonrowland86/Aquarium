@@ -1,8 +1,8 @@
 .item.active.fish-a {
-	background: black;
+	background: url(/assets/fish-e.png);
+	position: absolute;
 	height: 80px;
 	width: 120px;
-	position: absolute;
 	left: 100px;
 	top: 55%;
 	z-index: 90;
@@ -12,7 +12,7 @@
 }
 
 .item.active.fish-b {
-	background: red;
+	background: url(/assets/fish-b.png);
 	position: absolute;
 	height: 85px;
 	width: 120px;
@@ -25,7 +25,7 @@
 }
 
 .item.active.fish-c {
-	background: blue;
+	background: url(/assets/fish-c.png);
 	position: absolute;
 	height: 150px;
 	width: 150px;
@@ -40,7 +40,7 @@
 @keyframes swim{
 	0%{
 		bottom: 30%;
-
+		transform: translate3d(50px, 40px, 0px);
 	}
 	10%{
 
@@ -54,28 +54,31 @@
 	20%{
 
 	}
-	30%{
+	35%{
 
 	}
-	35%{
+	40%{
 
 	}
 	50%{
 
 	}
-	55%{
+	60%{
 
 	}
 	75%{
-		transform:scaleX(1);
-	}
-	75.5%{
-		transform:scaleX(-1);
-	}
-	85%{
 
 	}
-	95%{
+	80%{
+
+	}
+	86%{
+		transform:scaleX(1);
+	}
+	85%{
+		transform:scaleX(-1);
+	}
+	90%{
 
 	}
 	100%{
