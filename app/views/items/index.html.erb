@@ -1,11 +1,16 @@
-<h2>Your Items</h2>
-<h4>You hve <%= current_user.items.count %> items in your aquarium</h4>
-<% @items.each do |item| %>
-  <div class="item">
-    <%= link_to item.name, item_path(item) %>
-  </div>
-<% end %>
-<br>
-<%= link_to 'Add New Item', new_item_path %>
-<br>
-<%= link_to 'View Your Aquarium', users_path %>
+<div class="content">
+  <% if current_user.items.present? %>
+  <h2>You have <%= current_user.items.count %> fish in your aquarium</h2>
+  <% else %>
+  <h2>You have nothing in your aquarium!</h2>
+  <% end %>
+  <% @items.each do |item| %>
+    <div class="item">
+      <%= link_to item.name, item_path(item), class: "link" %>
+    </div>
+  <% end %>
+  <br>
+  <%= link_to 'Add New Fish', new_item_path, class: "link add" %>
+  <br>
+  <%= link_to 'Back To Your Aquarium', users_path, class: "link add" %>
+</div>
