@@ -8,18 +8,42 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-family: helvetica;
 }
+//Landing Page
+.landing {
+  text-align: center;
+  margin-top: 50px;
+}
+.title {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 3.5em;
+  color: #3BA0E8;
+}
+.main-landing {
+  margin-top: 50px;
+}
+//Links
 .link {
-
+  text-decoration: none;
 }
-
+.link.add {
+  background: #FF687D;
+  padding: 5px 8px 5px 8px;
+  border-radius: 20px;
+  color: white;
+}
+//Nav
 nav {
   display: flex;
   flex-direction: row;
-  background-color: #D8F9C0;
+  background-color: #FF687D;
   height: 75px;
+  border-bottom: 10px solid #3BA0E8;
 }
-
+nav .link {
+  color: white;
+}
 nav ul {
   display: flex;
 }
@@ -28,13 +52,201 @@ nav li {
   flex-direction: row;
   padding: 10px;
 }
-
+li .login {
+  flex-grow: 1;
+}
+//Main Content
 .main {
   flex: 1;
-  background-color: #27FCEE;
-
+  background-color: #27E6EE;
+  border-bottom: 50px solid #D8F9C0;
+  position: relative;
+}
+.content {
+  text-align: center;
+  padding: 10px;
+  width: 50vw;
+  margin: 0 auto;
+  margin-top: 50px;
+  background: white;
+  border-top: 10px solid #3BA0E8;
+}
+.login-h4 {
+  color: #3BA0E8;
+}
+.link.register {
+  color: #FF687D;
+}
+.register-form {
+  margin-bottom: 20px;
+}
+//Aquarium Content
+.aquarium-floor {
+  position: absolute;
+  bottom: 15px;
+}
+.rock-level-1 {
+  position: absolute;
+  bottom: 0px;
+}
+.rock-level-2 {
+  position: absolute;
+  bottom: 5px;
+}
+.rock-level-3 {
+  position: absolute;
+  bottom: 35px;
+}
+.rock1 {
+  position: absolute;
+  left: 350px;
+  bottom: 0px;
+  background:grey;
+  width: 230px;
+  height: 70px;
+  border-radius: 50% / 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.rock2 {
+  position: absolute;
+  left: 300px;
+  bottom: 0px;
+  background:grey;
+  width: 200px;
+  height: 40px;
+  border-radius: 50% / 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.rock3 {
+  position: absolute;
+  left: 700px;
+  bottom: 0px;
+  background:grey;
+  width: 200px;
+  height: 50px;
+  border-radius: 50% / 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.rock4 {
+  position: absolute;
+  left: 85px;
+  bottom: 0px;
+  background:grey;
+  width: 90px;
+  height: 25px;
+  border-radius: 50% / 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  z-index: 100;
+}
+.rock5 {
+  position: absolute;
+  left: 550px;
+  bottom: 0px;
+  background:#91A7AD;
+  width: 230px;
+  height: 30px;
+  border-radius: 50% / 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.rock6 {
+  position: absolute;
+  left: -20px;
+  bottom: 0px;
+  background:#91A7AD;
+  width: 150px;
+  height: 50px;
+  border-radius: 50% / 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.rock7 {
+  position: absolute;
+  left: 440px;
+  bottom: 0px;
+  background:#91A7AD;
+  width: 50px;
+  height: 20px;
+  border-radius: 50% / 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.rock8 {
+  position: absolute;
+  left: 60px;
+  bottom: 0px;
+  background:grey;
+  width: 150px;
+  height: 50px;
+  border-radius: 50% / 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.rock9 {
+  position: absolute;
+  left: 1100px;
+  bottom: 0px;
+  background:#91A7AD;
+  width: 180px;
+  height: 40px;
+  border-radius: 50% / 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.coral-1 {
+  background: url(/assets/coral-1.png);
+  position: absolute;
+  height: 89px;
+  width: 78px;
+  left: 900px;
+  bottom: 0px;
+}
+.coral-2 {
+  background: url(/assets/coral-2.png);
+  position: absolute;
+  height: 89px;
+  width: 82px;
+  left: 40px;
+  bottom: 0px;
+}
+.coral-3 {
+  background: url(/assets/coral-3.png);
+  position: absolute;
+  height: 90px;
+  width: 82px;
+  left: 200px;
+  bottom: 0px;
+}
+.coral-4 {
+  background: url(/assets/coral-4.png);
+  position: absolute;
+  height: 103px;
+  width: 71px;
+  left: 700px;
+  bottom: 0px;
+}
+.grass-1 {
+  background: url(/assets/grass-1.png);
+  position: absolute;
+  height: 150px;
+  width: 108px;
+  left: 480px;
+  bottom: 0px;
+}
+.grass-2 {
+  background: url(/assets/grass-2.png);
+  position: absolute;
+  height: 140px;
+  width: 103px;
+  left: 1100px;
+  bottom: 0px;
 }
 
+//Footer
 footer {
   height: 50px;
   background-color: #D8F9C0;
