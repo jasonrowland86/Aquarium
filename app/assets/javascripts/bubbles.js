@@ -36,29 +36,29 @@
 //   });
 // };
 // bubbles();
-document.getElementsByClassName('main').style = "background: white;";
-
-function generateBubbles() {
-  let bubble_amount = Math.floor((Math.random() * 13) + 1);
-
-  for (let i=0; i<bubble_amount; i++) {
-    let aquarium = document.querySelector('.aquarium');
-    let bubble = document.createElement("div");
-    bubble.className = "bubble";
-    bubble.appendChild(aquarium);
-  }
-  bubbles = document.querySelectorAll('.bubble');
-  for (let i=0; i<bubbles; i++) {
-    let position = Math.floor(Math.random() * 100);
-    let size = Math.floor((Math.random() * 10) + 1);
-    let speed = 1.5 * Math.random() * 1;
-    let animation_delay = Math.floor(Math.random() * 13);
-    bubbles[i].style.width = size +'px';
-    bubbles[i].style.hieght = size +'px';
-    bubbles[i].style.background = 'rba(255, 255, 255, 0.3)';
-    bubbles[i].style.left = position +'px';
-
-  }
-}
-
-generateBubbles();
+// document.getElementsByClassName('main').style = "background: white;";
+//
+// function generateBubbles() {
+//   var bubble_amount = Math.floor((Math.random() * 13) + 1);
+//
+//   for (let i=0; i<bubble_amount; i++) {
+//     let aquarium = document.querySelector('.aquarium');
+//     let bubble = document.createElement("div");
+//     bubble.className = "bubble";
+//     bubble.appendChild(aquarium);
+//   }
+//   var bubbles = document.querySelectorAll('.bubble');
+//   for (let i=0; i<bubbles; i++) {
+//     let position = Math.floor(Math.random() * 100);
+//     let size = Math.floor((Math.random() * 10) + 1);
+//     let speed = 1.5 * Math.random() * 1;
+//     let animation_delay = Math.floor(Math.random() * 13);
+//     bubbles[i].style.width = size +'px';
+//     bubbles[i].style.hieght = size +'px';
+//     bubbles[i].style.background = 'rba(255, 255, 255, 0.3)';
+//     bubbles[i].style.left = position +'px';
+//
+//   }
+// }
+//
+// generateBubbles();
