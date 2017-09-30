@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: jasonrowland86
+  api_key: '993939282321378'
+  api_secret: UNiA4NyeQANY6qvU_XEGKpoTlsU
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: jasonrowland86
+  api_key: '993939282321378'
+  api_secret: UNiA4NyeQANY6qvU_XEGKpoTlsU
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: jasonrowland86
+  api_key: '993939282321378'
+  api_secret: UNiA4NyeQANY6qvU_XEGKpoTlsU
+  enhance_image_tag: true
+  static_image_support: false

@@ -1,10 +1,12 @@
 <div class="content">
   <h2 class="title">Login</h2>
-  <%= form_for @user, url: session_path do |f| %>
-    <%= f.text_field :username, placeholder: 'Username' %>
-    <%= f.password_field :password, placeholder: 'Password' %>
-    <%= f.submit 'Submit', class: "add" %>
-  <% end %>
+  <div class="form">
+    <%= form_for @user, url: session_path do |f| %>
+      <%= f.text_field :username, placeholder: 'Username' %>
+      <%= f.password_field :password, placeholder: 'Password' %>
+      <%= f.submit 'Submit', class: "add" %>
+    <% end %>
+  </div>
   <br>
   <h4 class="login-h4">Not a member?</h4>
   <%= link_to "Register", new_user_path, class: "link register" %>

@@ -1,9 +1,7 @@
 html, body {
-
   padding: 0;
   margin: 0;
 }
-
 body {
   display: flex;
   flex-direction: column;
@@ -20,7 +18,7 @@ body {
   font-size: 3.5em;
   color: #3BA0E8;
 }
-.main-landing {
+.main-login {
   margin-top: 50px;
 }
 //Links
@@ -32,6 +30,10 @@ body {
   padding: 5px 8px 5px 8px;
   border-radius: 20px;
   color: white;
+  margin:0px 20px 0px 20px;
+}
+.link.add:hover {
+  background: #3BA0E8;
 }
 //Nav
 nav {
@@ -40,6 +42,7 @@ nav {
   background-color: #FF687D;
   height: 75px;
   border-bottom: 10px solid #3BA0E8;
+  justify-content: flex-end;
 }
 nav .link {
   color: white;
@@ -51,6 +54,9 @@ nav li {
   list-style: none;
   flex-direction: row;
   padding: 10px;
+}
+.nav:hover {
+  color: #3BA0E8;
 }
 li .login {
   flex-grow: 1;
@@ -70,6 +76,19 @@ li .login {
   margin-top: 50px;
   background: white;
   border-top: 10px solid #3BA0E8;
+  z-index: 100;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.form {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+input {
+  text-align: center;
 }
 .login-h4 {
   color: #3BA0E8;
@@ -79,6 +98,40 @@ li .login {
 }
 .register-form {
   margin-bottom: 20px;
+}
+.item-title {
+  font-family: 'Quicksand', sans-serif;
+  color: #3BA0E8;
+}
+.fish {
+  color: #3BA0E8;
+  display: block;
+}
+.item-nav-links {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.item:hover {
+
+}
+.nav-group {
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+}
+i {
+  margin-top: -5px;
+}
+//Flash Messages
+.notice, .error {
+  text-align: center;
+  background: #FF687D;
+  width: 50vw;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.notice h2 {
+  color: white;
 }
 //Aquarium Content
 .aquarium-floor {
@@ -97,6 +150,7 @@ li .login {
   position: absolute;
   bottom: 35px;
 }
+
 .rock1 {
   position: absolute;
   left: 350px;
@@ -248,6 +302,43 @@ li .login {
 
 //Footer
 footer {
+  text-align: center;
   height: 50px;
   background-color: #D8F9C0;
+}
+
+@media only screen and (max-width: 768px) {
+  .content input {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 2px 10px 0px;
+    max-height: 300px;
+  }
+  .form {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .login-h4 {
+    margin-bottom: 0;
+  }
+   input {
+    justify-content: center;
+    text-align: center;
+  }
+  .item-nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    margin: 0 auto;
+  }
+  .item-nav-links .link {
+    min-width: 30vw;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
 }

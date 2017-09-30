@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
 
     if user
       sign_in(user)
-      flash[:notice] = 'Logged in'
+      flash[:notice] = "#{user.username} Logged in"
       redirect_to users_path
     else
       flash[:error] = 'Username or password incorrect'
@@ -22,7 +22,6 @@ class SessionsController < ApplicationController
 
   def destroy
     sign_out
-    flash[:notice] = 'Logged out'
     redirect_to root_path
   end
 

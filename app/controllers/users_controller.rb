@@ -16,7 +16,7 @@ class UsersController < ApplicationController
       redirect_to users_path
     else
       errors = user.errors.full_messages
-      flash[:error] = errors.join(', ')
+      flash[:error] = 'Form Incorrect'
       @user = User.new(username: create_params[:username])
       render :new
     end

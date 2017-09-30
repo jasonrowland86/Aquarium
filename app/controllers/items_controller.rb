@@ -19,7 +19,7 @@ class ItemsController < ApplicationController
     @item.user = current_user
 
     if @item.save
-      flash[:notice] = 'Added item'
+      flash[:notice] = 'You added a new fish!'
       redirect_to item_path(@item)
     else
       flash[:error] = @item.errors.full_messages.join(', ')
@@ -30,7 +30,7 @@ class ItemsController < ApplicationController
   def destroy
     item = current_user.items.find(params[:id])
     item.destroy!
-    flash[:notice] = "#{item.name} Removed!"
+    flash[:notice] = "#{item.name} was removed!"
     redirect_to items_path
   end
 

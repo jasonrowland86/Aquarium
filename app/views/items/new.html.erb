@@ -1,7 +1,16 @@
-<h2>Add new Item</h2>
-
-<%= form_for @item do |f| %>
-  <%= f.text_field :name %>
-  <%= f.select :kind, options_for_select(@kinds), include_blank: true %>
-  <%= f.submit 'Add' %>
-<% end %>
+<div class="content">
+  <h2 class="fish">Add New Fish</h2>
+  <div class="form">
+    <%= form_for @item do |f| %>
+      <%= f.label "Name your fish:", class: "fish" %>
+      <%= f.text_field :name, placeholder: "Name" %>
+      <br>
+      <br>
+      <%= f.label "Select type:", class:"fish" %>
+      <%= f.select :kind, options_for_select(@kinds), include_blank: true %>
+      <br>
+      <br>
+      <%= f.submit 'Add' %>
+    <% end %>
+  </div>
+</div>
