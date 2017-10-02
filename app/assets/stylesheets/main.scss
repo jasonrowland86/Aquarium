@@ -40,7 +40,7 @@ nav {
   display: flex;
   flex-direction: row;
   background-color: #FF687D;
-  height: 75px;
+  height: 50px;
   border-bottom: 10px solid #3BA0E8;
   justify-content: flex-end;
 }
@@ -54,9 +54,10 @@ nav li {
   list-style: none;
   flex-direction: row;
   padding: 10px;
+  margin-bottom: 5px;
 }
-.nav:hover {
-  color: #3BA0E8;
+i {
+  margin-top: -5px;
 }
 li .login {
   flex-grow: 1;
@@ -81,6 +82,7 @@ li .login {
 form {
   display: flex;
   flex-direction: column;
+  margin-bottom: 5px;
 }
 .form {
   display: flex;
@@ -99,6 +101,11 @@ input {
 .register-form {
   margin-bottom: 20px;
 }
+.listed-item {
+  text-align: left;
+  margin: 0 auto;
+  margin-left: 30%;
+}
 .item-title {
   font-family: 'Quicksand', sans-serif;
   color: #3BA0E8;
@@ -108,19 +115,13 @@ input {
   display: block;
 }
 .item-nav-links {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 10px;
-}
-.item:hover {
-
 }
 .nav-group {
   display: flex;
   flex-direction: row;
   margin-right: auto;
-}
-i {
-  margin-top: -5px;
 }
 //Flash Messages
 .notice, .error {
@@ -135,8 +136,13 @@ i {
 }
 //Aquarium Content
 .aquarium-floor {
+  width: 100vh;
+  overflow: hidden;
+}
+.aquarium-level {
   position: absolute;
   bottom: 15px;
+  width: 100%;
 }
 .rock-level-1 {
   position: absolute;
@@ -242,7 +248,7 @@ i {
 }
 .rock9 {
   position: absolute;
-  left: 1100px;
+  left: 975px;
   bottom: 0px;
   background:#91A7AD;
   width: 180px;
@@ -299,6 +305,155 @@ i {
   left: 1100px;
   bottom: 0px;
 }
+/////////////////////
+// .rock1 {
+//   position: absolute;
+//   left: 350px;
+//   bottom: 0px;
+//   background:grey;
+//   width: 230px;
+//   height: 70px;
+//   border-radius: 50% / 100%;
+//   border-bottom-left-radius: 0;
+//   border-bottom-right-radius: 0;
+// }
+// .rock2 {
+//   position: absolute;
+//   left: 300px;
+//   bottom: 0px;
+//   background:grey;
+//   width: 200px;
+//   height: 40px;
+//   border-radius: 50% / 100%;
+//   border-bottom-left-radius: 0;
+//   border-bottom-right-radius: 0;
+// }
+// .rock3 {
+//   position: absolute;
+//   left: 700px;
+//   bottom: 0px;
+//   background:grey;
+//   width: 200px;
+//   height: 50px;
+//   border-radius: 50% / 100%;
+//   border-bottom-left-radius: 0;
+//   border-bottom-right-radius: 0;
+// }
+// .rock4 {
+//   position: absolute;
+//   left: 85px;
+//   bottom: 0px;
+//   background:grey;
+//   width: 90px;
+//   height: 25px;
+//   border-radius: 50% / 100%;
+//   border-bottom-left-radius: 0;
+//   border-bottom-right-radius: 0;
+//   z-index: 100;
+// }
+// .rock5 {
+//   position: absolute;
+//   left: 550px;
+//   bottom: 0px;
+//   background:#91A7AD;
+//   width: 230px;
+//   height: 30px;
+//   border-radius: 50% / 100%;
+//   border-bottom-left-radius: 0;
+//   border-bottom-right-radius: 0;
+// }
+// .rock6 {
+//   position: absolute;
+//   left: -20px;
+//   bottom: 0px;
+//   background:#91A7AD;
+//   width: 150px;
+//   height: 50px;
+//   border-radius: 50% / 100%;
+//   border-bottom-left-radius: 0;
+//   border-bottom-right-radius: 0;
+// }
+// .rock7 {
+//   position: absolute;
+//   left: 440px;
+//   bottom: 0px;
+//   background:#91A7AD;
+//   width: 50px;
+//   height: 20px;
+//   border-radius: 50% / 100%;
+//   border-bottom-left-radius: 0;
+//   border-bottom-right-radius: 0;
+// }
+// .rock8 {
+//   position: absolute;
+//   left: 60px;
+//   bottom: 0px;
+//   background:grey;
+//   width: 150px;
+//   height: 50px;
+//   border-radius: 50% / 100%;
+//   border-bottom-left-radius: 0;
+//   border-bottom-right-radius: 0;
+// }
+// .rock9 {
+//   position: absolute;
+//   left: 1100px;
+//   bottom: 0px;
+//   background:#91A7AD;
+//   width: 180px;
+//   height: 40px;
+//   border-radius: 50% / 100%;
+//   border-bottom-left-radius: 0;
+//   border-bottom-right-radius: 0;
+// }
+// .coral-1 {
+//   background: url(/assets/coral-1.png);
+//   position: absolute;
+//   height: 89px;
+//   width: 78px;
+//   left: 900px;
+//   bottom: 0px;
+// }
+// .coral-2 {
+//   background: url(/assets/coral-2.png);
+//   position: absolute;
+//   height: 89px;
+//   width: 82px;
+//   left: 40px;
+//   bottom: 0px;
+// }
+// .coral-3 {
+//   background: url(/assets/coral-3.png);
+//   position: absolute;
+//   height: 90px;
+//   width: 82px;
+//   left: 200px;
+//   bottom: 0px;
+// }
+// .coral-4 {
+//   background: url(/assets/coral-4.png);
+//   position: absolute;
+//   height: 103px;
+//   width: 71px;
+//   left: 700px;
+//   bottom: 0px;
+// }
+// .grass-1 {
+//   background: url(/assets/grass-1.png);
+//   position: absolute;
+//   height: 150px;
+//   width: 108px;
+//   left: 480px;
+//   bottom: 0px;
+// }
+// .grass-2 {
+//   background: url(/assets/grass-2.png);
+//   position: absolute;
+//   height: 140px;
+//   width: 103px;
+//   left: 1100px;
+//   bottom: 0px;
+// }
 
 //Footer
 footer {
@@ -336,6 +491,9 @@ footer {
     min-width: 30vw;
     margin: 0 auto;
     margin-top: 10px;
+  }
+  .show-fish {
+    margin-bottom: 10px;
   }
   form {
     display: flex;

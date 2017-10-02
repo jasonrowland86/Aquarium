@@ -5,7 +5,7 @@
   <h2 class="item-title">You have no fish in your aquarium!</h2>
   <% end %>
   <% @items.each do |item| %>
-    <div class="item">
+    <div class="listed-item">
       <%= link_to item.name, item_path(item), class: "link fish" %>
     </div>
   <% end %>
