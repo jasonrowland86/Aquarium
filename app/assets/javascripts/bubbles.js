@@ -36,9 +36,9 @@
 //   });
 // };
 // generateBubbles();
-$(document).ready(function() {
-  $('<h2>Test</h2>').appendTo(".aquarium");
-});
+// $(document).ready(function() {
+//   $('<h2>Test</h2>').appendTo(".aquarium");
+// });
 
 // $( window ).on( "load", function() {
 //   $('<h2>Hello</h2>').appendTo(".main");
