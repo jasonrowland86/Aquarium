@@ -1,4 +1,4 @@
-<div class="aquarium">
+<div id="aquarium" class="aquarium">
   <% if current_user.items.present? %>
     <% current_user.items.each do |item| %>
       <div class="item active <%= item.kind %>"></div>

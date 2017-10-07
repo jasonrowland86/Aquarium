@@ -1,8 +1,8 @@
 .item.active.fish-a {
-	background: url(/assets/fish-e.png);
+	background: url(https://s3.us-east-2.amazonaws.com/aquarium-app/fish-a.png);
 	position: absolute;
-	height: 80px;
-	width: 120px;
+	height: 109px;
+	width: 148px;
 	left: 100px;
 	top: 55%;
 	z-index: 90;
@@ -12,7 +12,7 @@
 }
 
 .item.active.fish-b {
-	background: url(/assets/fish-b.png);
+	background: url(https://s3.us-east-2.amazonaws.com/aquarium-app/fish-b.png);
 	position: absolute;
 	height: 85px;
 	width: 120px;
@@ -25,7 +25,7 @@
 }
 
 .item.active.fish-c {
-	background: url(/assets/fish-c.png);
+	background: url(https://s3.us-east-2.amazonaws.com/aquarium-app/fish-c.png);
 	position: absolute;
 	height: 150px;
 	width: 150px;
@@ -35,6 +35,54 @@
 	animation:swim3 30s infinite linear;
 	-moz-animation:swim3 30s infinite linear;
 	-webkit-animation:swim3 30s infinite linear;
+}
+.item.active.fish-d {
+	background: url(https://s3.us-east-2.amazonaws.com/aquarium-app/fish-d.png);
+	position: absolute;
+	height: 197px;
+	width: 110px;
+	left: 100px;
+	top: 55%;
+	z-index: 90;
+	animation:swim 30s infinite linear;
+	-moz-animation:swim 30s infinite linear;
+	-webkit-animation:swim 30s infinite linear;
+}
+.item.active.fish-e {
+	background: url(https://s3.us-east-2.amazonaws.com/aquarium-app/fish-e.png);
+	position: absolute;
+	height: 80px;
+	width: 120px;
+	left: 100px;
+	top: 55%;
+	z-index: 90;
+	animation:swim 30s infinite linear;
+	-moz-animation:swim 30s infinite linear;
+	-webkit-animation:swim 30s infinite linear;
+}
+.item.active.fish-f {
+	background: url(https://s3.us-east-2.amazonaws.com/aquarium-app/fish-f.png);
+	position: absolute;
+	height: 80px;
+	width: 111px;
+	left: 91px;
+	top: 55%;
+	z-index: 90;
+	animation:swim 30s infinite linear;
+	-moz-animation:swim 30s infinite linear;
+	-webkit-animation:swim 30s infinite linear;
+}
+.item.active.fish-g {
+	background: url(https://s3.us-east-2.amazonaws.com/aquarium-app/fish-g.png);
+	position: absolute;
+	height: 80px;
+	width: 120px;
+	left: 100px;
+	top: 55%;
+	z-index: 90;
+	animation:swim 30s infinite linear;
+	-moz-animation:swim 30s infinite linear;
+	-webkit-animation:swim 30s infinite linear;
 }
 
 //CSS Animation for fish_a

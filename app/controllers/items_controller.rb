@@ -11,7 +11,7 @@ class ItemsController < ApplicationController
 
   def new
     @item = Item.new
-    @kinds = ['fish-a', 'fish-b', 'fish-c']
+    @kinds = ['fish-a', 'fish-b', 'fish-c', 'fish-d', 'fish-e', 'fish-f']
   end
 
   def create

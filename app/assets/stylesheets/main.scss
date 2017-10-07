@@ -134,7 +134,13 @@ input {
 .notice h2 {
   color: white;
 }
+h4 {
+  color: white;
+}
 //Aquarium Content
+.aquarium {
+  height: 100%;
+}
 .aquarium-floor {
   width: 100vh;
   overflow: hidden;
@@ -258,7 +264,7 @@ input {
   border-bottom-right-radius: 0;
 }
 .coral-1 {
-  background: url(/assets/coral-1.png);
+  background: url(https://s3.us-east-2.amazonaws.com/aquarium-app/coral-1.png);
   position: absolute;
   height: 89px;
   width: 78px;
@@ -266,7 +272,7 @@ input {
   bottom: 0px;
 }
 .coral-2 {
-  background: url(/assets/coral-2.png);
+  background: url(https://s3.us-east-2.amazonaws.com/aquarium-app/coral-2.png);
   position: absolute;
   height: 89px;
   width: 82px;
@@ -274,7 +280,7 @@ input {
   bottom: 0px;
 }
 .coral-3 {
-  background: url(/assets/coral-3.png);
+  background: url(https://s3.us-east-2.amazonaws.com/aquarium-app/coral-3.png);
   position: absolute;
   height: 90px;
   width: 82px;
@@ -282,7 +288,7 @@ input {
   bottom: 0px;
 }
 .coral-4 {
-  background: url(/assets/coral-4.png);
+  background: url(https://s3.us-east-2.amazonaws.com/aquarium-app/coral-4.png);
   position: absolute;
   height: 103px;
   width: 71px;
@@ -290,7 +296,7 @@ input {
   bottom: 0px;
 }
 .grass-1 {
-  background: url(/assets/grass-1.png);
+  background: url(https://s3.us-east-2.amazonaws.com/aquarium-app/grass-1.png);
   position: absolute;
   height: 150px;
   width: 108px;
@@ -298,7 +304,7 @@ input {
   bottom: 0px;
 }
 .grass-2 {
-  background: url(/assets/grass-2.png);
+  background: url(https://s3.us-east-2.amazonaws.com/aquarium-app/grass-2.png);
   position: absolute;
   height: 140px;
   width: 103px;
