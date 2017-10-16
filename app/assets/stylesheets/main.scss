@@ -66,13 +66,17 @@ li .login {
 .main {
   flex: 1;
   background-color: #27E6EE;
+  background: -webkit-linear-gradient(#27E6EE 60%, #27D9EE, #27C4EE);
+  background: -o-linear-gradient(#27E6EE 60%, #27D9EE, #27C4EE);
+  background: -moz-linear-gradient(#27E6EE 60%, #27D9EE, #27C4EE);
+  background: linear-gradient(#27E6EE 60%, #27D9EE, #27C4EE);
   border-bottom: 50px solid #D8F9C0;
   position: relative;
 }
 .content {
   text-align: center;
   padding: 10px;
-  width: 50vw;
+  width: 60vw;
   margin: 0 auto;
   margin-top: 50px;
   background: white;
@@ -137,72 +141,189 @@ input {
 h4 {
   color: white;
 }
+
+// Bubbles
+.bubble1 {
+  background: rgba(255, 255, 255, .6);
+  border-radius: 25px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 35vw;
+  animation:bubbles 10s infinite linear;
+	-moz-animation:bubbles 10s infinite linear;
+	-webkit-animation:bubbles 10s infinite linear;
+}
+.bubble2 {
+  background: rgba(255, 255, 255, .6);
+  border-radius: 25px;
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  left: 37vw;
+  animation:bubbles 8s infinite linear;
+	-moz-animation:bubbles 8s infinite linear;
+	-webkit-animation:bubbles 8s infinite linear;
+}
+.bubble3 {
+  background: rgba(255, 255, 255, .6);
+  border-radius: 25px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 40vw;
+  animation:bubbles 15s infinite linear;
+	-moz-animation:bubbles 15s infinite linear;
+	-webkit-animation:bubbles 15s infinite linear;
+}
+
+.bubble4 {
+  background: rgba(255, 255, 255, .6);
+  border-radius: 25px;
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  left: 66vw;
+  animation:bubbles 5s infinite linear;
+	-moz-animation:bubbles 5s infinite linear;
+	-webkit-animation:bubbles 5s infinite linear;
+}
+.bubble5 {
+  background: rgba(255, 255, 255, .6);
+  border-radius: 25px;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  left: 63vw;
+  animation:bubbles 12s infinite linear;
+	-moz-animation:bubbles 12s infinite linear;
+	-webkit-animation:bubbles 12s infinite linear;
+}
+.bubble6 {
+  background: rgba(255, 255, 255, .6);
+  border-radius: 25px;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  left: 67vw;
+  animation:bubbles 7s infinite linear;
+	-moz-animation:bubbles 7s infinite linear;
+	-webkit-animation:bubbles 7s infinite linear;
+}
+
+.bubble7 {
+  background: rgba(255, 255, 255, .6);
+  border-radius: 25px;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  left: 67vw;
+  animation:bubbles 7s infinite linear;
+	-moz-animation:bubbles 7s infinite linear;
+	-webkit-animation:bubbles 7s infinite linear;
+}
+.bubble8 {
+  background: rgba(255, 255, 255, .6);
+  border-radius: 25px;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 90vw;
+  animation:bubbles 8.5s infinite linear;
+	-moz-animation:bubbles 8.5s infinite linear;
+	-webkit-animation:bubbles 8.5s infinite linear;
+}
+.bubble9 {
+  background: rgba(255, 255, 255, .6);
+  border-radius: 25px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 12vw;
+  animation:bubbles 8.5s infinite linear;
+	-moz-animation:bubbles 8.5s infinite linear;
+	-webkit-animation:bubbles 8.5s infinite linear;
+}
+.bubble10 {
+  background: rgba(255, 255, 255, .6);
+  border-radius: 25px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 10vw;
+  animation:bubbles 10s infinite linear;
+	-moz-animation:bubbles 10s infinite linear;
+	-webkit-animation:bubbles 10s infinite linear;
+}
+
+@keyframes bubbles{
+  from {
+    bottom: 0px;
+
+  }
+  to{
+    bottom: 90%;
+  }
+  100%{
+    background: rgba(255, 255, 255, 0);
+  }
+}
+
 //Aquarium Content
 .aquarium {
   height: 100%;
 }
 .aquarium-floor {
-  width: 100vh;
-  overflow: hidden;
-}
-.aquarium-level {
-  position: absolute;
-  bottom: 15px;
   width: 100%;
+  display: flex;
 }
-.rock-level-1 {
-  position: absolute;
-  bottom: 0px;
+.floor-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
 }
-.rock-level-2 {
-  position: absolute;
-  bottom: 5px;
-}
-.rock-level-3 {
-  position: absolute;
-  bottom: 35px;
-}
-
 .rock1 {
   position: absolute;
-  left: 350px;
+  left: 40vw;
   bottom: 0px;
+  margin-bottom: 1vh;
   background:grey;
-  width: 230px;
-  height: 70px;
+  width: 20vw;
+  height: 60px;
   border-radius: 50% / 100%;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 .rock2 {
   position: absolute;
-  left: 300px;
+  left: 34vw;
   bottom: 0px;
-  background:grey;
-  width: 200px;
-  height: 40px;
+  background: #8B8F8E;
+  width: 20vw;
+  height: 35px;
   border-radius: 50% / 100%;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 .rock3 {
   position: absolute;
-  left: 700px;
+  left: 65vw;
   bottom: 0px;
   background:grey;
-  width: 200px;
-  height: 50px;
+  width: 30vw;
+  height: 100px;
+  margin-bottom: 1vh;
   border-radius: 50% / 100%;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 .rock4 {
   position: absolute;
-  left: 85px;
+  left: 10vw;
   bottom: 0px;
-  background:grey;
-  width: 90px;
-  height: 25px;
+  background:#8B8F8E;
+  width: 15vw;
+  height: 50px;
   border-radius: 50% / 100%;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -210,32 +331,32 @@ h4 {
 }
 .rock5 {
   position: absolute;
-  left: 550px;
+  left: 60vw;
   bottom: 0px;
   background:#91A7AD;
-  width: 230px;
-  height: 30px;
+  width: 25vw;
+  height: 35px;
   border-radius: 50% / 100%;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 .rock6 {
   position: absolute;
-  left: -20px;
+  left: -2vw;
   bottom: 0px;
   background:#91A7AD;
-  width: 150px;
-  height: 50px;
+  width: 15vw;
+  height: 60px;
   border-radius: 50% / 100%;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 .rock7 {
   position: absolute;
-  left: 440px;
+  left: 50vw;
   bottom: 0px;
   background:#91A7AD;
-  width: 50px;
+  width: 7vw;
   height: 20px;
   border-radius: 50% / 100%;
   border-bottom-left-radius: 0;
@@ -243,22 +364,12 @@ h4 {
 }
 .rock8 {
   position: absolute;
-  left: 60px;
+  left: 5vw;
   bottom: 0px;
   background:grey;
-  width: 150px;
-  height: 50px;
-  border-radius: 50% / 100%;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-.rock9 {
-  position: absolute;
-  left: 975px;
-  bottom: 0px;
-  background:#91A7AD;
-  width: 180px;
-  height: 40px;
+  width: 22vw;
+  height: 100px;
+  margin-bottom: 2vh;
   border-radius: 50% / 100%;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -268,7 +379,7 @@ h4 {
   position: absolute;
   height: 89px;
   width: 78px;
-  left: 900px;
+  left: 60vw;
   bottom: 0px;
 }
 .coral-2 {
@@ -276,7 +387,7 @@ h4 {
   position: absolute;
   height: 89px;
   width: 82px;
-  left: 40px;
+  left: 3vw;
   bottom: 0px;
 }
 .coral-3 {
@@ -284,7 +395,7 @@ h4 {
   position: absolute;
   height: 90px;
   width: 82px;
-  left: 200px;
+  left: 30vw;
   bottom: 0px;
 }
 .coral-4 {
@@ -292,7 +403,7 @@ h4 {
   position: absolute;
   height: 103px;
   width: 71px;
-  left: 700px;
+  left: 80vw;
   bottom: 0px;
 }
 .grass-1 {
@@ -300,7 +411,7 @@ h4 {
   position: absolute;
   height: 150px;
   width: 108px;
-  left: 480px;
+  left: 10vw;
   bottom: 0px;
 }
 .grass-2 {
@@ -308,158 +419,10 @@ h4 {
   position: absolute;
   height: 140px;
   width: 103px;
-  left: 1100px;
+  left: 90vw;
   bottom: 0px;
+  margin-bottom: 2vh;
 }
-/////////////////////
-// .rock1 {
-//   position: absolute;
-//   left: 350px;
-//   bottom: 0px;
-//   background:grey;
-//   width: 230px;
-//   height: 70px;
-//   border-radius: 50% / 100%;
-//   border-bottom-left-radius: 0;
-//   border-bottom-right-radius: 0;
-// }
-// .rock2 {
-//   position: absolute;
-//   left: 300px;
-//   bottom: 0px;
-//   background:grey;
-//   width: 200px;
-//   height: 40px;
-//   border-radius: 50% / 100%;
-//   border-bottom-left-radius: 0;
-//   border-bottom-right-radius: 0;
-// }
-// .rock3 {
-//   position: absolute;
-//   left: 700px;
-//   bottom: 0px;
-//   background:grey;
-//   width: 200px;
-//   height: 50px;
-//   border-radius: 50% / 100%;
-//   border-bottom-left-radius: 0;
-//   border-bottom-right-radius: 0;
-// }
-// .rock4 {
-//   position: absolute;
-//   left: 85px;
-//   bottom: 0px;
-//   background:grey;
-//   width: 90px;
-//   height: 25px;
-//   border-radius: 50% / 100%;
-//   border-bottom-left-radius: 0;
-//   border-bottom-right-radius: 0;
-//   z-index: 100;
-// }
-// .rock5 {
-//   position: absolute;
-//   left: 550px;
-//   bottom: 0px;
-//   background:#91A7AD;
-//   width: 230px;
-//   height: 30px;
-//   border-radius: 50% / 100%;
-//   border-bottom-left-radius: 0;
-//   border-bottom-right-radius: 0;
-// }
-// .rock6 {
-//   position: absolute;
-//   left: -20px;
-//   bottom: 0px;
-//   background:#91A7AD;
-//   width: 150px;
-//   height: 50px;
-//   border-radius: 50% / 100%;
-//   border-bottom-left-radius: 0;
-//   border-bottom-right-radius: 0;
-// }
-// .rock7 {
-//   position: absolute;
-//   left: 440px;
-//   bottom: 0px;
-//   background:#91A7AD;
-//   width: 50px;
-//   height: 20px;
-//   border-radius: 50% / 100%;
-//   border-bottom-left-radius: 0;
-//   border-bottom-right-radius: 0;
-// }
-// .rock8 {
-//   position: absolute;
-//   left: 60px;
-//   bottom: 0px;
-//   background:grey;
-//   width: 150px;
-//   height: 50px;
-//   border-radius: 50% / 100%;
-//   border-bottom-left-radius: 0;
-//   border-bottom-right-radius: 0;
-// }
-// .rock9 {
-//   position: absolute;
-//   left: 1100px;
-//   bottom: 0px;
-//   background:#91A7AD;
-//   width: 180px;
-//   height: 40px;
-//   border-radius: 50% / 100%;
-//   border-bottom-left-radius: 0;
-//   border-bottom-right-radius: 0;
-// }
-// .coral-1 {
-//   background: url(/assets/coral-1.png);
-//   position: absolute;
-//   height: 89px;
-//   width: 78px;
-//   left: 900px;
-//   bottom: 0px;
-// }
-// .coral-2 {
-//   background: url(/assets/coral-2.png);
-//   position: absolute;
-//   height: 89px;
-//   width: 82px;
-//   left: 40px;
-//   bottom: 0px;
-// }
-// .coral-3 {
-//   background: url(/assets/coral-3.png);
-//   position: absolute;
-//   height: 90px;
-//   width: 82px;
-//   left: 200px;
-//   bottom: 0px;
-// }
-// .coral-4 {
-//   background: url(/assets/coral-4.png);
-//   position: absolute;
-//   height: 103px;
-//   width: 71px;
-//   left: 700px;
-//   bottom: 0px;
-// }
-// .grass-1 {
-//   background: url(/assets/grass-1.png);
-//   position: absolute;
-//   height: 150px;
-//   width: 108px;
-//   left: 480px;
-//   bottom: 0px;
-// }
-// .grass-2 {
-//   background: url(/assets/grass-2.png);
-//   position: absolute;
-//   height: 140px;
-//   width: 103px;
-//   left: 1100px;
-//   bottom: 0px;
-// }
 
 //Footer
 footer {
@@ -467,7 +430,11 @@ footer {
   height: 50px;
   background-color: #D8F9C0;
 }
-
+@media only screen and (max-width: 500px) {
+  .content {
+    min-width: 80vw;
+  }
+}
 @media only screen and (max-width: 768px) {
   .content input {
     display: flex;
