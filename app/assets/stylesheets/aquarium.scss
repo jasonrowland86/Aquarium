@@ -56,9 +56,9 @@
 	left: 100px;
 	top: 55%;
 	z-index: 90;
-	animation:swim 30s infinite linear;
-	-moz-animation:swim 30s infinite linear;
-	-webkit-animation:swim 30s infinite linear;
+	animation:swimE 40s infinite linear;
+	-moz-animation:swimE 40s infinite linear;
+	-webkit-animation:swimE 40s infinite linear;
 }
 .item.active.fish-f {
 	background: url(https://s3.us-east-2.amazonaws.com/aquarium-app/fish-f.png);
@@ -83,6 +83,30 @@
 	animation:swim 30s infinite linear;
 	-moz-animation:swim 30s infinite linear;
 	-webkit-animation:swim 30s infinite linear;
+}
+
+@keyframes swimE{
+	from{
+		left:85%;
+	}
+	20%{
+
+	}
+	40%{
+
+	}
+	60%{
+
+	}
+	80%{
+
+	}
+	100%{
+
+	}
+	to{
+		left:0%;
+	}
 }
 
 //CSS Animation for fish_a
