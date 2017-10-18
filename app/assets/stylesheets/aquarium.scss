@@ -6,9 +6,9 @@
 	left: 100px;
 	top: 55%;
 	z-index: 90;
-	animation:swim 30s infinite linear;
-	-moz-animation:swim 30s infinite linear;
-	-webkit-animation:swim 30s infinite linear;
+	animation:swimA 20s infinite linear;
+	-moz-animation:swimA 20s infinite linear;
+	-webkit-animation:swimA 20s infinite linear;
 }
 
 .item.active.fish-b {
@@ -19,9 +19,9 @@
 	left: 200px;
 	top: 30%;
 	z-index: 80;
-	animation:swim2 30s infinite linear;
-	-moz-animation:swim2 30s infinite linear;
-	-webkit-animation:swim2 30s infinite linear;
+	animation:swimB 18s infinite linear;
+	-moz-animation:swimB 18s infinite linear;
+	-webkit-animation:swimB 18s infinite linear;
 }
 
 .item.active.fish-c {
@@ -32,9 +32,9 @@
 	left: 200px;
 	top: 80%;
 	z-index: 10;
-	animation:swim3 30s infinite linear;
-	-moz-animation:swim3 30s infinite linear;
-	-webkit-animation:swim3 30s infinite linear;
+	animation:swimC 45s infinite linear;
+	-moz-animation:swimC 45s infinite linear;
+	-webkit-animation:swimC 45s infinite linear;
 }
 .item.active.fish-d {
 	background: url(https://s3.us-east-2.amazonaws.com/aquarium-app/fish-d.png);
@@ -44,9 +44,9 @@
 	left: 100px;
 	top: 55%;
 	z-index: 90;
-	animation:swim 30s infinite linear;
-	-moz-animation:swim 30s infinite linear;
-	-webkit-animation:swim 30s infinite linear;
+	animation:swimD 33s infinite linear;
+	-moz-animation:swimD 33s infinite linear;
+	-webkit-animation:swimD 33s infinite linear;
 }
 .item.active.fish-e {
 	background: url(https://s3.us-east-2.amazonaws.com/aquarium-app/fish-e.png);
@@ -56,9 +56,9 @@
 	left: 100px;
 	top: 55%;
 	z-index: 90;
-	animation:swimE 40s infinite linear;
-	-moz-animation:swimE 40s infinite linear;
-	-webkit-animation:swimE 40s infinite linear;
+	animation:swimE 20s infinite linear;
+	-moz-animation:swimE 20s infinite linear;
+	-webkit-animation:swimE 20s infinite linear;
 }
 .item.active.fish-f {
 	background: url(https://s3.us-east-2.amazonaws.com/aquarium-app/fish-f.png);
@@ -66,876 +66,325 @@
 	height: 80px;
 	width: 111px;
 	left: 91px;
-	top: 55%;
+	top: 20%;
 	z-index: 90;
-	animation:swim 30s infinite linear;
-	-moz-animation:swim 30s infinite linear;
-	-webkit-animation:swim 30s infinite linear;
+	animation:swimF 28s infinite linear;
+	-moz-animation:swimF 28s infinite linear;
+	-webkit-animation:swimF 28s infinite linear;
 }
-.item.active.fish-g {
-	background: url(https://s3.us-east-2.amazonaws.com/aquarium-app/fish-g.png);
-	position: absolute;
-	height: 80px;
-	width: 120px;
-	left: 100px;
-	top: 55%;
-	z-index: 90;
-	animation:swim 30s infinite linear;
-	-moz-animation:swim 30s infinite linear;
-	-webkit-animation:swim 30s infinite linear;
-}
+// .item.active.fish-g {
+// 	background: url(https://s3.us-east-2.amazonaws.com/aquarium-app/fish-g.png);
+// 	position: absolute;
+// 	height: 80px;
+// 	width: 120px;
+// 	left: 100px;
+// 	top: 65%;
+// 	z-index: 90;
+// 	animation:swim 30s infinite linear;
+// 	-moz-animation:swim 30s infinite linear;
+// 	-webkit-animation:swim 30s infinite linear;
+// }
+@keyframes swimA{
+	from{
+		left:5%;
+		top:40%;
+	}
+	25%{
+		left:20vw;
+		top:60%;
+	}
+	30%{
+		left:35vw;
+		top:45%;
+	}
+	40%{
 
+	}
+	49%{
+		left:85%;
+	}
+	50%{
+		left:86%;
+		transform:scaleX(1);
+	}
+	50.5%{
+		transform:scaleX(-1);
+	}
+	51%{
+
+	}
+	60%{
+
+	}
+	70%{
+		left:35vw;
+		top:45%;
+	}
+	85%{
+		left:20vw;
+		top:60%;
+	}
+	99%{
+		transform:scaleX(-1);
+	}
+	99.5%{
+		transform:scaleX(1);
+	}
+	100%{
+		left:5%;
+		top:40%;
+	}
+}
+@keyframes swimB{
+	from{
+		left:65%;
+		top:30%;
+	}
+	25%{
+		left:40%;
+		top:50%;
+	}
+	30%{
+
+	}
+	40%{
+		left:20%;
+		top:70%;
+	}
+	49%{
+		left:10%;
+	}
+	50%{
+		left:9%;
+		transform:scaleX(1);
+	}
+	50.5%{
+		transform:scaleX(-1);
+	}
+	60%{
+		left:20%;
+		top:70%;
+	}
+	70%{
+
+	}
+	85%{
+		left:40%;
+		top:50%;
+	}
+	99%{
+		transform:scaleX(-1);
+	}
+	99.5%{
+		transform:scaleX(1);
+	}
+	100%{
+		left:65%;
+		top:30%;
+	}
+	to:{
+
+	}
+}
+@keyframes swimC{
+	from{
+		left:20%;
+		bottom:10%;
+	}
+	25%{
+		left:30%;
+		bottom:30%;
+	}
+	30%{
+		left:35%;
+		bottom:50%;
+	}
+	40%{
+		left:60%;
+		bottom:45%;
+	}
+	49%{
+		top:22%;
+		bottom:30%;
+	}
+	50%{
+		left:86%;
+		transform:scaleX(1);
+	}
+	50.5%{
+		transform:scaleX(-1);
+	}
+	51%{
+
+	}
+	60%{
+		bottom:45%;
+	}
+	70%{
+		left:35%;
+		bottom:50%;
+	}
+	85%{
+		left:30%;
+		bottom:30%;
+	}
+	99%{
+		transform:scaleX(-1);
+	}
+	99.5%{
+		transform:scaleX(1);
+	}
+	100%{
+		left:20%;
+		bottom:10%;
+	}
+}
+@keyframes swimD{
+	from{
+		left:75%;
+		top:20%;
+	}
+	25%{
+		left:65%;
+		top:30%;
+	}
+	30%{
+		left:60%;
+		top:35%;
+	}
+	40%{
+
+	}
+	49%{
+		left:55%;
+	}
+	50%{
+		left:54%;
+		transform:scaleX(1);
+	}
+	50.5%{
+		transform:scaleX(-1);
+	}
+	51%{
+
+	}
+	60%{
+
+	}
+	70%{
+		left:65%;
+		top:25%;
+	}
+	85%{
+		left:60%;
+		top:30%;
+	}
+	99%{
+		transform:scaleX(-1);
+	}
+	99.5%{
+		transform:scaleX(1);
+	}
+	100%{
+		left:75%;
+		top:20%;
+	}
+}
 @keyframes swimE{
 	from{
 		left:85%;
 	}
 	20%{
+		left:60vw;
+		top:60%;
+	}
+	30%{
 
 	}
 	40%{
 
 	}
+	49%{
+		left: 2%;
+	}
+	50%{
+		left:1%;
+		transform:scaleX(1);
+	}
+	50.5%{
+		transform:scaleX(-1);
+	}
+	51%{
+
+	}
 	60%{
 
 	}
-	80%{
+	70%{
 
+	}
+	80%{
+		left:60vw;
+		top:60%;
+	}
+	99%{
+		transform:scaleX(-1);
+	}
+	99.5%{
+		transform:scaleX(1);
 	}
 	100%{
-
+		left:85%;
 	}
 	to{
-		left:0%;
+
 	}
 }
-
-//CSS Animation for fish_a
-@keyframes swim{
+@keyframes swimF{
 	from{
-		left:75%;
+		left:0%;
+		top:80%
 	}
 	20%{
-		left:0;
-		transform:scaleX(1);
-		z-index:50;
+		left:20vw;
+		top:60%;
 	}
-	20.5%{
-		transform:scaleX(-1);
-		z-index:10;
-		left:-10px;
-	}
-	22%{
-		left:20px;
+	30%{
+		left:50vw;
+		top:30%;
 	}
 	40%{
-		left:70%;
+		left:60vw;
 	}
 	50%{
-		z-index:25;
-		top:40%;
-		left:60%;
-		transform:scaleX(-1);
+		left: 89%;
+		transform:scaleX(1);
 	}
 	50.5%{
-		transform:scaleX(1);
-		z-index:100;
-		left:65%;
-		top:45%;
-	}
-	51%{
-		left:20%;
-		z-index:150;
+		transform:scaleX(-1);
 	}
 	60%{
-		left:30%;
-		z-index:150;
-	}
-	64%{
-		left:20%;
-		z-index:150;
-	}
-	66%{
-		left:50px;
-		z-index:150;
-	}
-	69%{
-		left:30px;
-		z-index:150;
+		left:60vw;
 	}
 	70%{
-		top:15%;
-		left:30px;
-		transform:scaleX(1);
-		z-index:90;
-	}
-	70.5%{
-		transform:scaleX(-1);
-		z-index:10;
-		left:20px;
-	}
-	71%{
-		left:40px;
-	}
-	80%{
-		left:60%;
-	}
-	81%{
-		left:65%;
-		top:45%;
-	}
-	82%{
-		left:76%;
-		transform:scaleX(-1);
-	}
-	82.5%{
-		transform:scaleX(1);
-		top:45%;
-		left:77%;
-	}
-	85%{
-		top:50%;
-		left:70%;
-		z-index:30;
-	}
-	89%{
-		top:60%;
-		left:75%;
-		z-index:30;
-	}
-	to{
-		left:85%;
-	}
-}
-@-moz-keyframes swim{
-	from{
-		left:80%;
-	}
-	20%{
-		left:0;
-		transform:scaleX(1);
-		z-index:90;
-	}
-	20.5%{
-		transform:scaleX(-1);
-		z-index:10;
-		left:-30px;
-	}
-	21%{
-		left:80px;
-	}
-	42%{
-		left:60%;
-	}
-	50%{
-		z-index:28;
+		left:50vw;
 		top:30%;
-		left:70%;
-		transform:scaleX(-1);
-	}
-	50.5%{
-		transform:scaleX(1);
-		z-index:100;
-		left:75%;
-		top:40%;
-	}
-	51%{
-		left:50%px;
-		z-index:150;
-	}
-	60%{
-		left:30%;
-		z-index:150;
-	}
-	64%{
-		left:20%;
-		z-index:150;
-	}
-	66%{
-		left:80px;
-		z-index:150;
-	}
-	69%{
-		left:-30px;
-		z-index:150;
-	}
-	70%{
-		top:15%;
-		left:-30px;
-		transform:scaleX(1);
-		z-index:90;
-	}
-	70.5%{
-		transform:scaleX(-1);
-		z-index:10;
-		left:-30px;
-	}
-	71%{
-		left:40px;
 	}
 	80%{
-		left:60%;
+		left:20vw;
+		top:60%;
 	}
-	81%{
-		left:65%;
-		top:45%;
-	}
-	82%{
-		left:76%;
+	99%{
 		transform:scaleX(-1);
 	}
-	82.5%{
+	99.5%{
 		transform:scaleX(1);
-		top:45%;
-		left:77%;
 	}
-	84%{
-		top:50%;
-		left:70%;
-		z-index:28;
-	}
-	88%{
-		top:60%;
-		left:75%;
-		z-index:28;
+	100%{
+		top:80%;
+		left:0%;
 	}
 	to{
-		left:80%;
-	}
-}
-@-webkit-keyframes swim{
-	from{
-		left:80%;
-	}
-	20%{
-		left:0;
-		transform:scaleX(1);
-		z-index:90;
-	}
-	20.5%{
-		transform:scaleX(-1);
-		z-index:10;
-		left:-30px;
-	}
-	21%{
-		left:80px;
-	}
-	42%{
-		left:60%;
-	}
-	50%{
-		z-index:28;
-		top:30%;
-		left:70%;
-		transform:scaleX(-1);
-	}
-	50.5%{
-		transform:scaleX(1);
-		z-index:100;
-		left:75%;
-		top:40%;
-	}
-	51%{
-		left:50%px;
-		z-index:150;
-	}
-	60%{
-		left:30%;
-		z-index:150;
-	}
-	64%{
-		left:20%;
-		z-index:150;
-	}
-	66%{
-		left:80px;
-		z-index:150;
-	}
-	69%{
-		left:-30px;
-		z-index:150;
-	}
-	70%{
-		top:15%;
-		left:-30px;
-		transform:scaleX(1);
-		z-index:90;
-	}
-	70.5%{
-		transform:scaleX(-1);
-		z-index:10;
-		left:-30px;
-	}
-	71%{
-		left:40px;
-	}
-	80%{
-		left:60%;
-	}
-	81%{
-		left:65%;
-		top:45%;
-	}
-	82%{
-		left:76%;
-		transform:scaleX(-1);
-	}
-	82.5%{
-		transform:scaleX(1);
-		top:45%;
-		left:77%;
-	}
-	84%{
-		top:50%;
-		left:70%;
-		z-index:28;
-	}
-	88%{
-		top:60%;
-		left:75%;
-		z-index:28;
-	}
-	to{
-		left:80%;
-	}
-}
 
-////////////////////////////////CSS Animation for fish_b
-@keyframes swim2{
-	from{
-		left:75%;
-	}
-	20%{
-		left:5;
-		transform:scaleX(1);
-		z-index:50;
-	}
-	20.5%{
-		transform:scaleX(-1);
-		z-index:10;
-		left:-5px;
-	}
-	22%{
-		left:20px;
-	}
-	35%{
-		left:50%;
-	}
-	45%{
-		left:60%;
-	}
-	50%{
-		z-index:25;
-		bottom:50%;
-		left:50%;
-		transform:scaleX(-1);
-	}
-	50.5%{
-		transform:scaleX(1);
-		z-index:100;
-		left:75%;
-		top:45%;
-	}
-	51%{
-		left:65%;
-		z-index:150;
-	}
-	55%{
-		left:50%;
-	}
-	58%{
-		left:45%;
-	}
-	60%{
-		left:30%;
-		z-index:150;
-	}
-	64%{
-		left:20%;
-		z-index:150;
-	}
-	69%{
-		left:20%;
-		z-index:150;
-	}
-	70%{
-		top:15%;
-		transform:scaleX(1);
-		z-index:90;
-	}
-	70.5%{
-		transform:scaleX(-1);
-		z-index:50;
-		left:30px;
-	}
-	71%{
-		left:40px;
-	}
-	80%{
-		left:60%;
-	}
-	81%{
-		right:65%;
-		top:45%;
-	}
-	82%{
-		left:76%;
-		transform:scaleX(-1);
-	}
-	82.5%{
-		transform:scaleX(1);
-		top:45%;
-		left:75%;
-	}
-	85%{
-		top:50%;
-		left:70%;
-		z-index:30;
-	}
-	89%{
-		top:60%;
-		left:75%;
-		z-index:30;
-	}
-	to{
-		left:85%;
-	}
-}
-@-moz-keyframes swim2{
-	from{
-		left:75%;
-	}
-	20%{
-		left:5;
-		transform:scaleX(1);
-		z-index:50;
-	}
-	20.5%{
-		transform:scaleX(-1);
-		z-index:10;
-		left:-5px;
-	}
-	22%{
-		left:20px;
-	}
-	35%{
-		left:50%;
-	}
-	45%{
-		left:60%;
-	}
-	50%{
-		z-index:25;
-		bottom:50%;
-		left:50%;
-		transform:scaleX(-1);
-	}
-	50.5%{
-		transform:scaleX(1);
-		z-index:100;
-		left:75%;
-		top:45%;
-	}
-	51%{
-		left:65%;
-		z-index:150;
-	}
-	55%{
-		left:50%;
-	}
-	58%{
-		left:45%;
-	}
-	60%{
-		left:30%;
-		z-index:150;
-	}
-	64%{
-		left:20%;
-		z-index:150;
-	}
-	69%{
-		left:20%;
-		z-index:150;
-	}
-	70%{
-		top:15%;
-		transform:scaleX(1);
-		z-index:90;
-	}
-	70.5%{
-		transform:scaleX(-1);
-		z-index:10;
-		left:30px;
-	}
-	71%{
-		left:40px;
-	}
-	80%{
-		left:60%;
-	}
-	81%{
-		left:65%;
-		top:45%;
-	}
-	82%{
-		left:76%;
-		transform:scaleX(-1);
-	}
-	82.5%{
-		transform:scaleX(1);
-		top:45%;
-		left:77%;
-	}
-	85%{
-		top:50%;
-		left:70%;
-		z-index:30;
-	}
-	89%{
-		top:60%;
-		left:75%;
-		z-index:30;
-	}
-	to{
-		left:85%;
-	}
-}
-@-webkit-keyframes swim2{
-	from{
-		left:75%;
-	}
-	20%{
-		left:5;
-		transform:scaleX(1);
-		z-index:50;
-	}
-	20.5%{
-		transform:scaleX(-1);
-		z-index:10;
-		left:-5px;
-	}
-	22%{
-		left:20px;
-	}
-	35%{
-		left:50%;
-	}
-	45%{
-		left:60%;
-	}
-	50%{
-		z-index:25;
-		bottom:50%;
-		left:50%;
-		transform:scaleX(-1);
-	}
-	50.5%{
-		transform:scaleX(1);
-		z-index:100;
-		left:75%;
-		top:45%;
-	}
-	51%{
-		left:65%;
-		z-index:150;
-	}
-	55%{
-		left:50%;
-	}
-	58%{
-		left:45%;
-	}
-	60%{
-		left:30%;
-		z-index:150;
-	}
-	64%{
-		left:20%;
-		z-index:150;
-	}
-	69%{
-		left:20%;
-		z-index:150;
-	}
-	70%{
-		top:15%;
-		transform:scaleX(1);
-		z-index:90;
-	}
-	70.5%{
-		transform:scaleX(-1);
-		z-index:10;
-		left:30px;
-	}
-	71%{
-		left:40px;
-	}
-	80%{
-		left:60%;
-	}
-	81%{
-		left:65%;
-		top:45%;
-	}
-	82%{
-		left:76%;
-		transform:scaleX(-1);
-	}
-	82.5%{
-		transform:scaleX(1);
-		top:45%;
-		left:77%;
-	}
-	85%{
-		top:50%;
-		left:70%;
-		z-index:30;
-	}
-	89%{
-		top:60%;
-		left:75%;
-		z-index:30;
-	}
-	to{
-		left:85%;
-	}
-}
-
-////////////////////////////////CSS Animation for fish_c
-@keyframes swim3{
-	from{
-		right:30%;
-	}
-	20%{
-		right:20;
-		transform:scaleX(1);
-		z-index:50;
-	}
-
-	25%{
-		right:20px;
-	}
-	30%{
-		right:50%;
-	}
-	35%{
-		z-index:25;
-		top:40%;
-		right:60%;
-	}
-	45%{
-		right:75%;
-		top:45%;
-	}
-	46%{
-		right:50%;
-	}
-	55%{
-		right:30%;
-		z-index:150;
-	}
-	65%{
-		right:20%;
-		z-index:150;
-	}
-	70%{
-		right:30px;
-		transform:scaleX(1);
-		z-index:90;
-	}
-	70.5%{
-		transform:scaleX(-1);
-		z-index:10;
-		right:20px;
-	}
-	71%{
-		right:40px;
-	}
-	80%{
-		right:35%;
-	}
-	81%{
-		right:45%;
-		top:45%;
-	}
-	82%{
-		right:50%;
-		transform:scaleX(-1);
-	}
-	82.5%{
-		transform:scaleX(1);
-		top:45%;
-		right:65%;
-	}
-	85%{
-		top:50%;
-		right:60%;
-		z-index:30;
-	}
-	89%{
-		top:60%;
-		right:75%;
-		z-index:30;
-	}
-	to{
-		left:85%;
-	}
-}
-@-moz-keyframes swim3{
-	from{
-		right:90%;
-	}
-	20%{
-		right:30px;
-		transform:scaleX(1);
-		z-index:50;
-	}
-
-	25%{
-		right:20px;
-	}
-	30%{
-		right:50%;
-	}
-	35%{
-		z-index:25;
-		top:40%;
-		right:60%;
-	}
-	45%{
-		right:75%;
-		top:45%;
-	}
-	46%{
-		right:50%;
-	}
-	55%{
-		right:30%;
-		z-index:150;
-	}
-	65%{
-		right:20%;
-		z-index:150;
-	}
-	70%{
-		right:30px;
-		transform:scaleX(1);
-		z-index:90;
-	}
-	70.5%{
-		transform:scaleX(-1);
-		z-index:10;
-		right:20px;
-	}
-	71%{
-		right:40px;
-	}
-	80%{
-		right:35%;
-	}
-	81%{
-		right:45%;
-		top:45%;
-	}
-	82%{
-		right:50%;
-		transform:scaleX(-1);
-	}
-	82.5%{
-		transform:scaleX(1);
-		top:45%;
-		right:65%;
-	}
-	85%{
-		top:50%;
-		right:60%;
-		z-index:30;
-	}
-	89%{
-		top:60%;
-		right:75%;
-		z-index:30;
-	}
-	to{
-		left:85%;
-	}
-}
-@-webkit-keyframes swim3{
-	from{
-		right:90%;
-	}
-	20%{
-		right:0;
-		transform:scaleX(1);
-		z-index:50;
-	}
-
-	25%{
-		right:20px;
-	}
-	30%{
-		right:50%;
-	}
-	35%{
-		z-index:25;
-		top:40%;
-		right:60%;
-	}
-	45%{
-		right:75%;
-		top:45%;
-	}
-	46%{
-		right:50%;
-	}
-	55%{
-		right:30%;
-		z-index:150;
-	}
-	65%{
-		right:20%;
-		z-index:150;
-	}
-	70%{
-		right:30px;
-		transform:scaleX(1);
-		z-index:90;
-	}
-	70.5%{
-		transform:scaleX(-1);
-		z-index:10;
-		right:20px;
-	}
-	71%{
-		right:40px;
-	}
-	80%{
-		right:35%;
-	}
-	81%{
-		right:45%;
-		top:45%;
-	}
-	82%{
-		right:50%;
-		transform:scaleX(-1);
-	}
-	82.5%{
-		transform:scaleX(1);
-		top:45%;
-		right:65%;
-	}
-	85%{
-		top:50%;
-		right:60%;
-		z-index:30;
-	}
-	89%{
-		top:60%;
-		right:75%;
-		z-index:30;
-	}
-	to{
-		left:85%;
 	}
 }

@@ -150,9 +150,9 @@ h4 {
   height: 20px;
   position: absolute;
   left: 35vw;
-  animation:bubbles 10s infinite linear;
-	-moz-animation:bubbles 10s infinite linear;
-	-webkit-animation:bubbles 10s infinite linear;
+  animation:bubbles 5s infinite linear;
+	-moz-animation:bubbles 5s infinite linear;
+	-webkit-animation:bubbles 5s infinite linear;
 }
 .bubble2 {
   background: rgba(255, 255, 255, .6);
@@ -206,18 +206,18 @@ h4 {
   height: 28px;
   position: absolute;
   left: 67vw;
-  animation:bubbles 7s infinite linear;
-	-moz-animation:bubbles 7s infinite linear;
-	-webkit-animation:bubbles 7s infinite linear;
+  animation:bubbles 8.5s infinite linear;
+	-moz-animation:bubbles 8.5s infinite linear;
+	-webkit-animation:bubbles 8.5s infinite linear;
 }
 
 .bubble7 {
   background: rgba(255, 255, 255, .6);
   border-radius: 25px;
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   position: absolute;
-  left: 67vw;
+  left: 65vw;
   animation:bubbles 7s infinite linear;
 	-moz-animation:bubbles 7s infinite linear;
 	-webkit-animation:bubbles 7s infinite linear;
