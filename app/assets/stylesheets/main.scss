@@ -74,14 +74,16 @@ li .login {
   position: relative;
 }
 .content {
+  position: absolute;
   text-align: center;
   padding: 10px;
   width: 60vw;
-  margin: 0 auto;
-  margin-top: 50px;
+  // margin: 0 auto;
+  // margin-top: 50px;
   background: white;
   border-top: 10px solid #3BA0E8;
-  z-index: 100;
+  z-index: 1000;
+  margin-left: 18%;
 }
 form {
   display: flex;
@@ -480,7 +482,7 @@ footer {
     justify-content: center;
   }
   .login-h4 {
-    margin-bottom: 0;
+    margin: 0;
   }
    input {
     justify-content: center;
