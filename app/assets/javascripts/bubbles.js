@@ -1,3 +1,8 @@
 $( window ).on( "load", function() {
-  // $('.bubble').css("background", "red");
+
+  //Remove flashnotice after 5 seconds
+  setInterval(function(){
+    $('.notice').css("display", "none");
+  }, 5000);
+
 });
